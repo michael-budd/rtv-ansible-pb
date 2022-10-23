@@ -1,0 +1,13 @@
+---
+# Title: role-samba4-primary-ad-dc
+#
+# Author: @Binj - Michael Budd
+# File: tasks/main.yml
+#
+# Description: Create primary Active Directory Domain Controller for Red Team Village
+
+- name: "For OS: Ubuntu 20.04"
+  import_tasks: setup_samba_domain_controller.yml
+  when:
+    - ansible_distribution == "Ubuntu"
+    - ansible_distribution_version == "20.04"

@@ -1,0 +1,13 @@
+---
+- hosts: rtv_adc01
+become: true
+
+vars:
+    # -- Custom settings: role-samba4-primary-ad-dc --
+    smb_workgroup : 'RTVCHALLENGE'
+    smb_realm     : 'RTVCHALLENGE.LOCAL' 
+    smb_username  : 'administrator'
+    smb_password  : 'SuperSecretSecret'
+
+roles:
+    - role-samba4-primary-ad-dc
