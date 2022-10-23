@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: rtv_adc01
   connection: local
   become: true
   vars:
