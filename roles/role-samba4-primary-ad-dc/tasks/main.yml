@@ -8,6 +8,6 @@
 
 - name: "For OS: Ubuntu 20.04"
   import_tasks: setup_samba_domain_controller.yml
-  when:
-    - ansible_distribution == "Ubuntu"
-    - ansible_distribution_version == "20.04"
+#  when:
+#    - ansible_distribution == "Ubuntu"
+#    - ansible_distribution_version == "20.04"
