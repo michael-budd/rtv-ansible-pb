@@ -1,6 +1,6 @@
 ---
 - hosts: rtv_adc01
-become: true
+    become: true
 
 vars:
     # -- Custom settings: role-samba4-primary-ad-dc --
