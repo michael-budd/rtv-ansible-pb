@@ -5,7 +5,7 @@
   vars:
     # -- Custom settings: role-samba4-primary-ad-dc --
     smb_workgroup : 'RTVCHALLENGE'
-    smb_realm     : 'RTVCHALLENGE.LOCAL' 
+    smb_realm     : 'RTVCHALLENGE.NET' 
     smb_username  : 'administrator'
     smb_password  : 'X3E5Op3RH1US4ok5'
   roles:
