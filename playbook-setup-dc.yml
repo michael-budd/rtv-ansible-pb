@@ -7,6 +7,6 @@
     smb_workgroup : 'RTVCHALLENGE'
     smb_realm     : 'RTVCHALLENGE.LOCAL' 
     smb_username  : 'administrator'
-    smb_password  : 'SuperSecretSecret'
+    smb_password  : 'X3E5Op3RH1US4ok5'
   roles:
     - role-samba4-primary-ad-dc
