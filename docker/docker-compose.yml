@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+
+  attacker:
+    container_name: attacker
+    image: kalilinux/kali-rolling:latest
+    networks:
+      vulnerable_net:
+        ipv4_address: 172.30.30.50
+    command: tail -F /dev/null
+
+  samba:
+    container_name: samba
+    build: .
+    networks:
+      vulnerable_net:
+        ipv4_address: 172.30.30.40
+
+networks:
+  vulnerable_net:
+    ipam:
+      config:
+        - 
+          subnet: 172.30.30.0/24
+          gateway: 172.30.30.1
